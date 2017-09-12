@@ -47,24 +47,29 @@ $ git commit -am 'added a song'
  create mode 100644 harry-wang/img/sailing-to-philadelphia.jpg
  create mode 100644 harry-wang/sailing-to-philly.html
  ```
-9. Push your branch to your forked repo:
+9. Merge yoru new branch to your master branch and delete the branch:
 ```
-$ git push origin harry-wang
+$ git checkout master
+$ git merge harry-wang -m "merge my new song"
+$ git branch -d harry-wang
 ```
-10. Go to Github and issue a Pull Request (PR) so that the Admin of the "upstream" repo can review and merge your code:
-<img width="1006" alt="screen shot 2017-09-11 at 9 05 02 pm" src="https://user-images.githubusercontent.com/595772/30303294-06373596-9735-11e7-8261-bedfcd9bba40.png">
-<img width="1038" alt="screen shot 2017-09-11 at 9 05 41 pm" src="https://user-images.githubusercontent.com/595772/30303296-073c9b2a-9735-11e7-8f03-5c2b5a031834.png">
-11. The Admin of upstream review your PR (add comments if necessary) and merge your PR:
-<img width="797" alt="screen shot 2017-09-11 at 9 09 33 pm" src="https://user-images.githubusercontent.com/595772/30303360-8734f480-9735-11e7-9eba-35edc14fa4ae.png">
-<img width="785" alt="screen shot 2017-09-11 at 9 09 54 pm" src="https://user-images.githubusercontent.com/595772/30303367-94951812-9735-11e7-8053-ca1e7fe47c15.png">
+10. Push your local changes to your forked repo:
+```
+$ git push origin master
+```
+11. Go to Github and issue a Pull Request (PR) so that the Admin of the "upstream" repo can review and merge your code:
 
-12. Once the change is merged by the upstream admin, you should switch back to the local master branch, pull the changes from the upstream repo and remove the branch:
+<img width="1047" alt="screen shot 2017-09-12 at 11 16 29 am" src="https://user-images.githubusercontent.com/595772/30333903-17c8e12a-97ac-11e7-84d3-eca58dcbc12c.png">
+<img width="801" alt="screen shot 2017-09-12 at 11 17 16 am" src="https://user-images.githubusercontent.com/595772/30333907-1ace7c04-97ac-11e7-9034-071ad1b0de00.png">
+<img width="813" alt="screen shot 2017-09-12 at 11 17 26 am" src="https://user-images.githubusercontent.com/595772/30333912-1c635396-97ac-11e7-8921-c92a7718719e.png">
+
+
+12. Once the change is merged by the upstream admin, you should switch back to the local master branch, pull the changes from the upstream repo and push the changes to your forked repo:
 
 ```
 $ git checkout master
 $ git pull upstream master
 $ git push origin master
-$ git branch -D harry-wang
 ```
 
 Congratulations, you just finished your first Github Workflow Exercise!
