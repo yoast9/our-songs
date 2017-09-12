@@ -58,7 +58,7 @@ $ git branch -d harry-wang
 $ git push origin master
 ```
 11. Go to Github and issue a Pull Request (PR) so that the Admin of the "upstream" repo can review and merge your code:
-
+<img width="1072" alt="screen shot 2017-09-12 at 11 16 00 am" src="https://user-images.githubusercontent.com/595772/30334273-109130aa-97ad-11e7-860c-dc2245f56b38.png">
 <img width="1047" alt="screen shot 2017-09-12 at 11 16 29 am" src="https://user-images.githubusercontent.com/595772/30333903-17c8e12a-97ac-11e7-84d3-eca58dcbc12c.png">
 <img width="801" alt="screen shot 2017-09-12 at 11 17 16 am" src="https://user-images.githubusercontent.com/595772/30333907-1ace7c04-97ac-11e7-9034-071ad1b0de00.png">
 <img width="813" alt="screen shot 2017-09-12 at 11 17 26 am" src="https://user-images.githubusercontent.com/595772/30333912-1c635396-97ac-11e7-8921-c92a7718719e.png">
